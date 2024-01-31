@@ -1,0 +1,25 @@
+'''Problem Statement
+
+Distribute Candy
+
+There are N children standing in a line. Each child is assigned a rating value.You are giving candies to these children subjected to the following requirements:
+1. Each child must have at least one candy.
+2. Children with a higher rating get more candies than their neighbours.
+What is the minimum candies you must give?
+
+Input Format:
+The first and the only argument contains N integers in an array A.
+
+Output Format:
+Return an integer, representing the minimum candies to be given.
+
+Example:
+Input 1:
+A = [1, 2]
+Output 1:
+3'''
+
+a=list(map(int,input().split()))
+n=len(a)
+min_candies=n*(n+1)//2 
+print(min_candies)
